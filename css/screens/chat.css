@@ -39,6 +39,7 @@
 .message-row {
   width: 100%;
   display: flex;
+  margin-bottom: 25px;
 }
 
 .message-row img {
@@ -68,4 +69,26 @@
 .message__time {
   color: rgba(0, 0, 0, 0.8);
   font-size: 13px;
+}
+
+.message-row__own {
+  justify-content: flex-end;
+}
+.message-row__own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+/* order: flex children에게만 먹힘 */
+/* .message-row__own .message__bubble {
+  order: 1;
+}
+.message-row__own .message__time {
+  order: 0;
+} */
+
+.message-row__own .message__info {
+  flex-direction: row-reverse;
 }
