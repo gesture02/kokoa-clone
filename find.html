@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find Screen on KOKOA Clone</title>
   </head>
+
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
@@ -27,7 +28,10 @@
       <h1 class="screen-header__title">Find</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span>
+          <span class="alarm badge-alarm"></span>
+          <i class="fas fa-cog fa-lg"></i>
+        </span>
       </div>
     </header>
 
@@ -130,12 +134,16 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="more.html">
-            <span class="nav__alarm">.</span>
+            <span class="nav__alarm badge-alarm"></span>
             <i class="fas fa-ellipsis-h fa-2x"></i
           ></a>
         </li>
       </ul>
     </nav>
+
+    <div id="no-mobile">
+      <span>Your Screen is too big</span>
+    </div>
 
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
